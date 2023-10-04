@@ -1,0 +1,37 @@
+.col-1 .active{
+    color: black;
+}
+.list-group-original{
+    border-radius: 0;
+    width: 190px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+.list-group-item-original{
+   color: red; 
+   border: none;
+}
+.list-group-item-original.active{
+    color: black;
+    background-color: white;
+    border-color: white;
+    border-left: 2px solid black;
+}
+.word-style{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.center{
+    text-align: center;
+}
+.form-select{
+    width: 350px;
+    margin-bottom: 2px;
+}
+.form-control{
+    margin-bottom: 2px;
+
+}
+.word-center{
+    text-align: center;
+}
+

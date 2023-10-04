@@ -1,266 +1,562 @@
-<table width="100%">
-    <tbody>
-      <tr>
-        <td valign="top">
-            <ul>
-                <li>
-                  <a href="/kanbas/profile/index.html">Account</a>
-                </li>
-                <li>
-                  <a href="#">Dashboard</a>
-                </li>
-                <li>
-                    <a href="/kanbas/Home.html">Courses</a>
-                  </li>
-                <li>
-                  <a href="#">Calendar</a>
-                </li>
-                <li>
-                  <a href="#">Inbox</a>
-                </li>
-                <li>
-                    <a href="#">History</a>
-                  </li>
-                <li>
-                    <a href="#">Studio</a>
-                </li>
-                <li>
-                    <a href="#">Commons</a>
-                  </li>
-                  <li>
-                    <a href="#">Help</a>
-                  </li>
-              </ul>
-            </td>
-            <td valign="top">
-              <ul>
-                <li>
-                  <a href="/kanbas/Home.html">Home</a>
-                </li>
-                <li>
-                  <a href="/Kanbas/Courses/Modules">Modules</a>
-                </li>
-                <li>
-                  <a href="/Kanbas/Courses/Piazza">Piazza</a>
-                </li>
-                <li>
-                  <a href="/Kanbas/Courses/Zoom">Zoom Meetings</a>
-                </li>
-                <li>
-                  <a href="/kanbas/assignments/index.html">Assignments</a>
-                </li>
-                <li>
-                    <a href="#">Quizzes</a>
-                  </li>
-                  <li>
-                    <a href="/kanbas/grades.html">Grades</a>
-                  </li>
-                <li>
-                  <a href="/Kanbas/Courses/People">People</a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Panopto">Panopto Video</a>
-                  </li>
-                  <li>
-                    <a href="/Kanbas/Courses/Discussions">Discussions</a>
-                  </li>
-                  <li>
-                    <a href="/Kanbas/Courses/Announcements">Announcements</a>
-                  </li>
-                  <li>
-                    <a href="/Kanbas/Courses/Pages">Pages</a>
-                  </li>
-                  <li>
-                    <a href="/Kanbas/Courses/Files">Files</a>
-                  </li>
-                  <li>
-                    <a href="/Kanbas/Courses/Rubrics">Rubrics</a>
-                  </li>
-                  <li>
-                    <a href="/Kanbas/Courses/Outcomes">Outcomes</a>
-                  </li>
-                  <li>
-                    <a href="/Kanbas/Courses/Collaborations">Collaborations</a>
-                  </li>
-                  <li>
-                    <a href="/Kanbas/Courses/Syllabus">Syllabus</a>
-                  </li>
-                  <li>
-                    <a href="/kanbas/settings/coursedetail/index.html">Settings</a>
-                  </li>
-              </ul>
-            </td>
-        <td valign="top">
-            <input type="button" value="Course Detail" onclick="location.href='/kanbas/settings/coursedetail/index.html'">
-            <button>Sections</button>
-            <input type="button" value="Navigation" onclick="location.href='/kanbas/settings/nevagation/index.html'">
-            <button>Apps</button>
-            <button>Feature Options</button>
-
-            <button>Integrations</button>
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css" />
+    <!-- <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/> -->
+    <link
+      href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/kanbas/profile/index.css">
+    <link rel="stylesheet" href="/public/labs/a2/index.css">
+  </head>
+  <body>
+    <div class="out">
+      <div class="d-none d-md-block">
+        <ul class="wd-kanbas-navigation-leftsidebar">
+          <li>
+            <img src="/images/n.jpg" alt="" style="width:85px; height: 85px;">
+          </li>
+          <li>
+            <i class="fa-regular fa-user fa-2x" style="color: #ebebeb;"></i>
+            <a href="/kanbas/profile/index.html">Account</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-gauge fa-2x" style="color: #e32400;"></i>
+            <a href="/kanbas/dashboard/index.html">Dashboard</a>
+          </li>
+          <li class="active">
+            <i class="fa-solid fa-book fa-2x" style="color: #e32400;"></i>
+              <a href="/kanbas/Home.html">Courses</a>
+            </li>
+          <li>
+            <i class="fa-solid fa-calendar-days fa-2x" style="color: #e32400;"></i>
+            <a href="#">Calendar</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-inbox fa-2x" style="color: #e32400;"></i>
             <br>
-            <h3>Course Details</h3>
-            Drag and drop items to reorder them in the course navigation.
-            <form action="">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <input type="button" value="Home" onclick="location.href='/kanbas/Home.html'">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" value="Modules" onclick="location.href='/kanbas/Home.html'">
-                            </td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" value="Piazza" onclick="location.href='/kanbas/Home.html'">
-                            </td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" value="Zoom Meetings" onclick="location.href='/kanbas/Home.html'">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" value="Assignments" onclick="location.href='/assignments/index.html'">
-                            </td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" value="Quizzes" onclick="location.href='/kanbas/Home.html'">
-                            </td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" value="Grades" onclick="location.href='/kanbas/grades.html'">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" value="People" onclick="location.href='/assignments/index.html'">
-                            </td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" value="Panopto Video" onclick="location.href='/kanbas/Home.html'">
-                            </td>
-                            </td>
-                        </tr>
-                        <h3>Drag items here to hide them from students.</h3>
-                        Disabling most pages will cause students who visit those pages
-                         to be redirected to the course home page. 
-                         <tr>
-                            <td>
-                                <input type="button" value="Chat" onclick="location.href='/kanbas/Home.html'">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" value="SCORM" onclick="location.href='/kanbas/Home.html'">
-                            </td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" value="Attendence" onclick="location.href='/kanbas/Home.html'">
-                            </td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" value="Barnes and Noble Bookstore" onclick="location.href='/kanbas/Home.html'">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" value="Digication" onclick="location.href='/assignments/index.html'">
-                            </td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" value="Top Hat" onclick="location.href='/kanbas/Home.html'">
-                            </td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" value="Syllabus" onclick="location.href='/kanbas/grades.html'">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" value="Perusall" onclick="location.href='/assignments/index.html'">
-                            </td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" value="Microsoft Teams Meetings" onclick="location.href='/kanbas/Home.html'">
-                            </td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" value="FACT Reporting and Photo Roster" onclick="location.href='/kanbas/Home.html'">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" value="Progress Reports(Navigate)" onclick="location.href='/assignments/index.html'">
-                            </td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" value="Microsoft Teams for Canvas" onclick="location.href='/kanbas/Home.html'">
-                            </td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" value="VHL Central" onclick="location.href='/kanbas/grades.html'">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" value="Gradescope 1.3" onclick="location.href='/assignments/index.html'">
-                            </td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" value="Credentials" onclick="location.href='/kanbas/Home.html'">
-                            </td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" value="iClicker" onclick="location.href='/kanbas/Home.html'">
-                            </td>
-                            </td>
-                        </tr>
-
-
+            <a href="#">Inbox</a>
+          </li>
+          <li>
+            <i class="fa-regular fa-clock fa-2x" style="color: #e32400;"></i>
+              <a href="#"></i>History</a>
+            </li>
+          <li>
+            <i class="fa-solid fa-play fa-2x" style="color: #e32400;"></i>
+            <br>
+              <a href="#">Studio</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-right-from-bracket fa-2x" style="color: #c30909;"></i>
+            
+            <br>
+              <a href="#">Commons</a>
+            </li>
+    
+            <li>
+              <div>
+                <i class="fa-regular fa-circle-question fa-2x" style="color: #ff4013;"></i>
+                <br>
+                <a href="#">Help</a>
+              </div>
+        
+              
+            </li>
+        </ul>
+      </div>
+      <div style="width: 90%;">
+        <nav style="--bs-breadcrumb-divider: '>';" class="big" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">
+              <a class="now" href="/kanbas/Home.html">CS4550.12631.202410</a></li>
+              <li class="breadcrumb-item" "><a class="nounderline now" style="color: black;"href="/kanbas/assignments/index.html">Settings</a></li>
+              
+            </ol>
+        </nav>
+        <hr>
+        
+        <div class="out">
+          <div class="list-group d-none d-md-block list-group-original" style="width: 22%;">
+            <a href="/kanbas/Home.html" class="list-group-item list-group-item-action list-group-item-original" aria-current="true">
+              Home
+            </a>
+            <a href="/kanbas/profile/index.html" class="list-group-item list-group-item-action list-group-item-original">Modules</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Piazza</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Zoom Meetings</a>
+            <a href="/kanbas/assignments/index.html" class="list-group-item list-group-item-action list-group-item-original">Assignments</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Quizzes</a>
+            <a href="/kanbas/grades.html" class="list-group-item list-group-item-action list-group-item-original">Grades</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">People</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Panopto Video</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Discussions<i class="fa-regular fa-eye-slash float-end" style="color: #d6d6d6;"></i></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Announcements<i class="fa-regular fa-eye-slash float-end" style="color: #d6d6d6;"></i></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Pages<i class="fa-regular fa-eye-slash float-end" style="color: #d6d6d6;"></i></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Files<i class="fa-regular fa-eye-slash float-end" style="color: #d6d6d6;"></i></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Rubrics<i class="fa-regular fa-eye-slash float-end" style="color: #d6d6d6;"></i></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Outcomes<i class="fa-regular fa-eye-slash float-end" style="color: #d6d6d6;"></i></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Collaborations<i class="fa-regular fa-eye-slash float-end" style="color: #d6d6d6;"></i></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Syllabus<i class="fa-regular fa-eye-slash float-end" style="color: #d6d6d6;"></i></a>
+            <a href="/kanbas/settings/coursedetail/index.html" class="list-group-item list-group-item-action list-group-item-original active">Settings</a>
+            </div>
+            <div>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/kanbas/settings/coursedetail/index.html">Course Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/kanbas/settings/nevagation/index.html">Navigation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1">Apps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1">Feature Options</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1">Integrations</a>
+                    </li>
+                 </ul>
+                 <div class="module-style">
+                    <br>
+                        <div>
+                            <h4>Drag items</h4>
+                        </div>
+                        <br>
                         
-                    </tbody>
-                </table>
+                        <div>
+                          
+                            <div class="list-group module-style">
+                                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                                  Home
+                                  
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">Modules
+                                    <i class="fa-solid fa-ellipsis-vertical float-end"></i></a>
 
-                <button>Save</button>
+                                  
+                                <a href="#" class="list-group-item list-group-item-action">Pizzas
+                                        <i class="fa-solid fa-ellipsis-vertical float-end"></i></a>
+                                 <a href="#" class="list-group-item list-group-item-action">Zoom Meetings
+                                            <i class="fa-solid fa-ellipsis-vertical float-end"></i></a>
+                                <a href="#" class="list-group-item list-group-item-action">Assignments
+                                                <i class="fa-solid fa-ellipsis-vertical float-end"></i></a>
+                                <a href="#" class="list-group-item list-group-item-action">Quizzes
+                                  <i class="fa-solid fa-ellipsis-vertical float-end"></i>
+                                
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">Grades
+                                    <i class="fa-solid fa-ellipsis-vertical float-end"></i></a>
+                                <a href="#" class="list-group-item list-group-item-action">People
+                                        <i class="fa-solid fa-ellipsis-vertical float-end"></i></a>
 
-            </form>
 
+
+
+
+                              </div>
+                         
+                  
+                        </div>
+                        <br>
+                        <div>
+                            <h4>Drag items here to hide from students</h4>
+                            Disabling most pages will cause students who visit those 
+                            pages to be restricted to the course home page.
+                        </div>
+                        <br>
+                    
+                        <div>
+                          
+                            <div class="list-group module-style">
+                                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                                  Chat
+                                  <div class="ms-2" style="color:#d6d6d6; font-size:small">
+                                    Page disabled, won't appear in navigation</div>
+                                  <i class="fa-solid fa-ellipsis-vertical float-end"></i>
+                                  
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                                    Scorm
+                                    <div class="ms-2" style="color:#d6d6d6; font-size:small">
+                                      Page disabled, won't appear in navigation</div>
+                                    <i class="fa-solid fa-ellipsis-vertical float-end"></i>
+                                    
+                                  </a>
+                                  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                                    Attendance
+                                    <div class="ms-2" style="color:#d6d6d6; font-size:small">
+                                      Page disabled, won't appear in navigation</div>
+                                    <i class="fa-solid fa-ellipsis-vertical float-end"></i>
+                                    
+                                  </a>
+                                  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                                   Barnes and Noble Bookstores
+                                    <div class="ms-2" style="color:#d6d6d6; font-size:small">
+                                      Page disabled, won't appear in navigation</div>
+                                    <i class="fa-solid fa-ellipsis-vertical float-end"></i>
+                                    
+                                  </a>
+                                  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                                   Digication
+                                    <div class="ms-2" style="color:#d6d6d6; font-size:small">
+                                      Page disabled, won't appear in navigation</div>
+                                    <i class="fa-solid fa-ellipsis-vertical float-end"></i>
+                                    
+                                  </a>
+                                  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                                   Top Hat
+                                    <div class="ms-2" style="color:#d6d6d6; font-size:small">
+                                      Page disabled, won't appear in navigation</div>
+                                    <i class="fa-solid fa-ellipsis-vertical float-end"></i>
+                                    
+                                  </a>
+                                  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                                   Syllabus
+                                    <div class="ms-2" style="color:#d6d6d6; font-size:small">
+                                      Page disabled, won't appear in navigation</div>
+                                    <i class="fa-solid fa-ellipsis-vertical float-end"></i>
+                                    
+                                  </a>
+                                  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                                   Perusall
+                                    <div class="ms-2" style="color:#d6d6d6; font-size:small">
+                                      Page disabled, won't appear in navigation</div>
+                                    <i class="fa-solid fa-ellipsis-vertical float-end"></i>
+                                    
+                                  </a>
+                                  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                                   Microsoft Teams Meetings
+                                    <div class="ms-2" style="color:#d6d6d6; font-size:small">
+                                      Page disabled, won't appear in navigation</div>
+                                    <i class="fa-solid fa-ellipsis-vertical float-end"></i>
+                                    
+                                  </a>
+                                  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                                   Fact Reporting and photo Roster
+                                    <div class="ms-2" style="color:#d6d6d6; font-size:small">
+                                      Page disabled, won't appear in navigation</div>
+                                    <i class="fa-solid fa-ellipsis-vertical float-end"></i>
+                                    
+                                    </a>
+                                    <hr>
+                          <div class="out">
+                            
+                            <button type="submit" class="btn btn-danger">Save</button>
+                            
+                          </div>
+
+
+
+
+                              </div>
+                         
+                  
+                        </div>
+                        
+            
+                  
+                </div>
+                 
+            </div>
+      
+            <!-- <div class="module-style">
+              
+                <div class="float-end out">
+      
+                  <button class="btn btn-light md-1">
+                    <i class="fa-solid fa-circle-check" style="color: #96d35f;"></i>
+                    Published
+                  </button>
+                  <button class="btn btn-secondary md-1"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                    <br>
+                    <br>
+                    <hr>
+                    <div>
+                      
+                    <div class="mb-3">
+                      <label for="Assignment Name"
+                             class="form-label">
+                        Assignment Name</label>
+                      <input type="text"
+                             class="form-control"
+                             id="Assignment Name"
+                             value="A1-ENV + HTML"
+                             placeholder="A1-ENV + HTML">
+                    </div>
+                    <div class="mb-3">
+                      <label for="textarea1"
+                             class="form-label">
+                        </label>
+                      <textarea class="form-control"
+                                id="textarea1"
+                                rows="6"
+                                
+                                placeholder="A1-ENV + HTML"
+                                >This assignment describes how to instal the development for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to a GitHub repository, and then deploying the content to a remote server hosted on Netify. </textarea>
+                    </div>
+                    <form>
+                      <div class="row mb-3">
+                        <div class="col-sm-1"></div>
+                        <label for="r1" class="col-sm-2 col-form-label" style="text-align: right;">
+                        Points</label>
+                        <div class="col-sm-7">
+                          <input type="text" class="form-control"
+                                 id="r1" placeholder="100"  value="100"/>
+                        </div>
+                        <div class="col-sm-2"></div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-2">
+                          Assignment Group
+                        </div>
+                        <select class="form-select col-sm-7" id="ag" style="width: 57%;">
+                          <option selected>Assignments</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                       </select>
+                        <div class="col-2"></div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-2">
+                          Display Grade as
+                        </div>
+                        <select class="form-select col-sm-7" id="ag" style="width: 57%;">
+                          <option selected>Percentage</option>
+                          <option value="1">Score</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                       </select>
+                        <div class="col-2"></div>
+                      </div>
+                      
+                      <div class="row mb-3">
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-2">Submission Type</div>
+                        <div class="col-sm-7" style="border: 1px solid #ccc;">
+                          <form>
+                            <div class="row mb-3 mt-3">
+                              </div>
+                              <select class="form-select col-sm-7 mb-3" id="ag" style="width: 57%;">
+                                <option selected>online</option>
+                                <option value="1">Score</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <div class="col-5"></div>
+                              <div class="row mb-3">
+                                <div class="col-sm-12 offset-sm-0">
+                                  <div class="form-check">
+                                    <input class="form-check-input"
+                                           type="checkbox" id="r6"/>
+                                      <label class="form-check-label" for="r6">
+                                        Text Entry</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-5"></div>
+                              <div class="row mb-3">
+                                <div class="col-sm-12 offset-sm-0">
+                                  <div class="form-check">
+                                    <input class="form-check-input"
+                                           type="checkbox" id="r6"/>
+                                      <label class="form-check-label" for="r6">
+                                       website URL</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-5"></div>
+                              <div class="row mb-3">
+                                <div class="col-sm-12 offset-sm-0">
+                                  <div class="form-check">
+                                    <input class="form-check-input"
+                                           type="checkbox" id="r6"/>
+                                      <label class="form-check-label" for="r6">
+                                        Media Recordings</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-5"></div>
+                              <div class="row mb-3">
+                                <div class="col-sm-12 offset-sm-0">
+                                  <div class="form-check">
+                                    <input class="form-check-input"
+                                           type="checkbox" id="r6"/>
+                                      <label class="form-check-label" for="r6">
+                                        Student Annotation</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-5"></div>
+                              <div class="row mb-3">
+                                <div class="col-sm-12 offset-sm-0">
+                                  <div class="form-check">
+                                    <input class="form-check-input"
+                                           type="checkbox" id="r6"/>
+                                      <label class="form-check-label" for="r6">
+                                        File Upload</label>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-5"></div>
+                              <div class="row mb-3">
+                                <div class="col-sm-10 offset-sm-2">
+                                  <div class="form-check">
+                                    <input class="form-check-input"
+                                           type="checkbox" id="r6"/>
+                                      <label class="form-check-label" for="r6">
+                                        Restrict Upload Options</label>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                          
+                          <div class="row mb-3 mt-3">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-2">Assign</div>
+                            <div class="col-sm-7" style="border: 1px solid #ccc;">
+                              <form>
+                                <div class="row mb-3 mt-3">
+                                  <div class="mb-3">
+                                    <label for="assignto"
+                                           class="form-label">
+                                      Assign to</label>
+                                    <input type="text"
+                                           class="form-control"
+                                           id="assignto"
+                                          >
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="text-fields-dob">
+                                      Due
+                                   </label>
+                                   <input type="date"
+                                         id="text-fields-dob"
+                                         value="2000-01-21"/><br/>
+                                  <div class="out mt-3">
+                                    <label for="text-fields-dob">
+                                      Available from:
+                                   </label>
+                                   <input type="date"
+                                         id="text-fields-dob"
+                                         value="2000-01-21"/>
+                                         <label for="text-fields-dob">
+                                         Until:
+                                       </label>
+                                       <input type="date"
+                                             id="text-fields-dob"
+                                             /><br/>
+                                <button type="submit" class="btn btn-primary">Add</button>
+                                       
+                                   
+
+                                  </div>
+                                   
+
+                                  </div>
+
+                                  
+                                </div>
+                            
+                            <div class="col-2"></div>
+                          
+                            
+                            
+                          
+                          
+      
+                        </form>
+                          
+                        
+                            
+
+
+                          
+                        </div>
+                      </div>
+
+
+
+
+
+                      <hr>
+                      <div class="out float-end">
+                        <button type="submit" class="btn btn-secondary me-2">cancel</button>
+                        <button type="submit" class="btn btn-danger">Save</button>
+                        
+                      </div>
+                      
+                      
+                     </form>
+                     
+              
+                    </div>
+                    
+        
+              
+            </div> -->
+            
+            </div>
+            
           
-        </td>
-    </tr>
-    </tbody>
-</table>
+          </div>
+        </div>
+      
+      
+
+ 
+  </body>
+  
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

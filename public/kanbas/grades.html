@@ -1,157 +1,224 @@
-<table width="100%">
-    <tbody>
-      <tr>
-        <td valign="top">
-            <ul>
-                <li>
-                  <a href="/kanbas/profile/index.html">Account</a>
-                </li>
-                <li>
-                  <a href="#">Dashboard</a>
-                </li>
-                <li>
-                    <a href="/kanbas/Home.html">Courses</a>
-                  </li>
-                <li>
-                  <a href="#">Calendar</a>
-                </li>
-                <li>
-                  <a href="#">Inbox</a>
-                </li>
-                <li>
-                    <a href="#">History</a>
-                  </li>
-                <li>
-                    <a href="#">Studio</a>
-                </li>
-                <li>
-                    <a href="#">Commons</a>
-                  </li>
-                  <li>
-                    <a href="#">Help</a>
-                  </li>
-              </ul>
-            </td>
-            <td valign="top">
-              <ul>
-                <li>
-                  <a href="/kanbas/Home.html">Home</a>
-                </li>
-                <li>
-                  <a href="/Kanbas/Courses/Modules">Modules</a>
-                </li>
-                <li>
-                  <a href="/Kanbas/Courses/Piazza">Piazza</a>
-                </li>
-                <li>
-                  <a href="/Kanbas/Courses/Zoom">Zoom Meetings</a>
-                </li>
-                <li>
-                  <a href="/kanbas/assignments/index.html">Assignments</a>
-                </li>
-                <li>
-                    <a href="#">Quizzes</a>
-                  </li>
-                  <li>
-                    <a href="/kanbas/grades.html">Grades</a>
-                  </li>
-                <li>
-                  <a href="/Kanbas/Courses/People">People</a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Panopto">Panopto Video</a>
-                  </li>
-                  <li>
-                    <a href="/Kanbas/Courses/Discussions">Discussions</a>
-                  </li>
-                  <li>
-                    <a href="/Kanbas/Courses/Announcements">Announcements</a>
-                  </li>
-                  <li>
-                    <a href="/Kanbas/Courses/Pages">Pages</a>
-                  </li>
-                  <li>
-                    <a href="/Kanbas/Courses/Files">Files</a>
-                  </li>
-                  <li>
-                    <a href="/Kanbas/Courses/Rubrics">Rubrics</a>
-                  </li>
-                  <li>
-                    <a href="/Kanbas/Courses/Outcomes">Outcomes</a>
-                  </li>
-                  <li>
-                    <a href="/Kanbas/Courses/Collaborations">Collaborations</a>
-                  </li>
-                  <li>
-                    <a href="/Kanbas/Courses/Syllabus">Syllabus</a>
-                  </li>
-                  <li>
-                    <a href="/kanbas/settings/coursedetail/index.html">Settings</a>
-                  </li>
-              </ul>
-            </td>
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css" />
+    <!-- <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/> -->
+    <link
+      href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/kanbas/profile/index.css">
+    <link rel="stylesheet" href="/public/labs/a2/index.css">
+  </head>
+  <body>
+    <div class="out">
+      <div class="d-none d-md-block">
+        <ul class="wd-kanbas-navigation-leftsidebar">
+          <li>
+            <img src="/images/n.jpg" alt="" style="width:85px; height: 85px;">
+          </li>
+          <li>
+            <i class="fa-regular fa-user fa-2x" style="color: #ebebeb;"></i>
+            <a href="/kanbas/profile/index.html">Account</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-gauge fa-2x" style="color: #e32400;"></i>
+            <a href="/kanbas/dashboard/index.html">Dashboard</a>
+          </li>
+          <li class="active">
+            <i class="fa-solid fa-book fa-2x" style="color: #e32400;"></i>
+              <a href="/kanbas/Home.html">Courses</a>
+            </li>
+          <li>
+            <i class="fa-solid fa-calendar-days fa-2x" style="color: #e32400;"></i>
+            <a href="#">Calendar</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-inbox fa-2x" style="color: #e32400;"></i>
+            <br>
+            <a href="#">Inbox</a>
+          </li>
+          <li>
+            <i class="fa-regular fa-clock fa-2x" style="color: #e32400;"></i>
+              <a href="#"></i>History</a>
+            </li>
+          <li>
+            <i class="fa-solid fa-play fa-2x" style="color: #e32400;"></i>
+            <br>
+              <a href="#">Studio</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-right-from-bracket fa-2x" style="color: #c30909;"></i>
+            
+            <br>
+              <a href="#">Commons</a>
+            </li>
+    
+            <li>
+              <div>
+                <i class="fa-regular fa-circle-question fa-2x" style="color: #ff4013;"></i>
+                <br>
+                <a href="#">Help</a>
+              </div>
         
-        <td valign="top">
-            <select>
-                <option>Gradebook</option>
-                </select>
-          <button>import</button>
-          <select>
-            <option>Export</option>
-            </select>
-          <button>Configure</button>
-          <hr />
-          <label for="text-fields-Student"><h3>Student Names</h3></label>
-          <input id="text-fields-Student" placeholder="Search Students"/><br/>
-          <label for="text-fields-Assignment"><h3>Search Assigments</h3></label>
-          <input id="text-fields-Assignment" placeholder="Search Assigments"/><br/>
-          <br/>
-          <button>Apply Filters</button>
+              
+            </li>
+        </ul>
+      </div>
+      <div style="width: 90%;">
+        <nav style="--bs-breadcrumb-divider: '>';" class="big" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">
+              <a class="now" href="/kanbas/Home.html">CS4550.12631.202410</a></li>
+            <li class="breadcrumb-item "><a class="nounderline" href="/kanbas/assignments/index.html">Grades</a></li>
+          </ol>
+        </nav>
+        <hr>
+        
+        <div class="out">
+          <div class="list-group d-none d-md-block list-group-original" style="width: 22%;">
+            <a href="/kanbas/Home.html" class="list-group-item list-group-item-action list-group-item-original" aria-current="true">
+              Home
+            </a>
+            <a href="/kanbas/profile/index.html" class="list-group-item list-group-item-action list-group-item-original">Modules</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Piazza</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Zoom Meetings</a>
+            <a href="/kanbas/assignments/index.html" class="list-group-item list-group-item-action list-group-item-original">Assignments</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Quizzes</a>
+            <a href="kanbas/grades.html" class="list-group-item list-group-item-action list-group-item-original active">Grades</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">People</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Panopto Video</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Discussions<i class="fa-regular fa-eye-slash float-end" style="color: #d6d6d6;"></i></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Announcements<i class="fa-regular fa-eye-slash float-end" style="color: #d6d6d6;"></i></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Pages<i class="fa-regular fa-eye-slash float-end" style="color: #d6d6d6;"></i></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Files<i class="fa-regular fa-eye-slash float-end" style="color: #d6d6d6;"></i></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Rubrics<i class="fa-regular fa-eye-slash float-end" style="color: #d6d6d6;"></i></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Outcomes<i class="fa-regular fa-eye-slash float-end" style="color: #d6d6d6;"></i></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Collaborations<i class="fa-regular fa-eye-slash float-end" style="color: #d6d6d6;"></i></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-original">Syllabus<i class="fa-regular fa-eye-slash float-end" style="color: #d6d6d6;"></i></a>
+            <a href="/kanbas/settings/coursedetail/index.html" class="list-group-item list-group-item-action list-group-item-original">Settings</a>
+            </div>
+      
+            <div class="module-style">
+              
+                  
+                <div>
+                <div class="float-end out">
+                  <button class="btn btn-secondary md-1 float-end">
+                    <i class="fa-solid fa-file-import" style="color: #000000;"></i>
+                    import
+                  </button>
+                  
+                  <button class="btn btn-secondary md-1">
+                    <i class="fa-solid fa-file-export" style="color: #000000;"></i>
+                    export
+                  </button>
+                  <button class="btn btn-secondary md-1"><i class="fa-solid fa-gear" style="color: #000000;"></i></i></button>
+                  
+                    </div>
+                  </div>  
+                  <br>
+                  <br>
+                  <hr>
+                  <table class="table">
+                    <thead>
+                    <tr class="table-secondary"><th>Student Name <h5></h5></th>
+                      <th>A1 SETUP <h5 style="color:#929292; font-size: 13px;">out of 100</h5></th>
+                      <th>A2 HTML<h5 style="color:#929292; font-size: 13px;">out of 100</h5></th>
+                      <th>A3 CSS<h5 style="color:#929292; font-size: 13px;">out of 100</h5></th>
+                      <th>A4 Bootstrap<h5 style="color:#929292; font-size: 13px;">out of 100</h5></th>
+                      
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="table-light">
+                      <td>Doxa Asibey</td>
+                      <td><input type="text" value="100%" placeholder="90%"></td>
+                      <td><input type="text" value="100%" placeholder="90%"></td>
+                      <td><input type="text" value="100%" placeholder="90%"></td>
+                      <td><input type="text" value="100%" placeholder="90%"></td>
+                      </tr>
+                    <tr class="table-secondary">
+                      <td>Thuy Tien Bui</td>
+                      <td>95%</td>
+                      <td>100%</td>
+                      <td>100%</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr class="table-light">
+                      <td>Yetong Chen</td>
+                      <td>95%</td>
+                      <td>100%</td>
+                      <td>100%</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr class="table-secondary">
+                      <td>Zhenyu Chen</td>
+                      <td>95%</td>
+                      <td>100%</td>
+                      <td>100%</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr class="table-light">
+                      <td>Yung-shin Chien</td>
+                      <td>95%</td>
+                      <td>100%</td>
+                      <td>100%</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr class="table-secondary">
+                      <td>Basil Coughian</td>
+                      <td>95%</td>
+                      <td>100%</td>
+                      <td>100%</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr class="table-light">
+                      <td>Racuel Dao</td>
+                      <td>95%</td>
+                      <td>100%</td>
+                      <td>100%</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr class="table-secondary">
+                      <td>Lana Do</td>
+                      <td>95%</td>
+                      <td>100%</td>
+                      <td>100%</td>
+                      <td>100%</td>
+                    </tr>
+                    </tbody>
+                    
+                 </table>
+                 
+              
+              
+            </div>
+            
+            </div>
+            
+          
+          </div>
+        </div>
+      
+      
+
+ 
+  </body>
   
-          <hr />
-          <table width="100%" border="1">
-            <thead>
-              <tr>
-                <th>Student Name</th>
-                <th>A1 - HTML</th>
-                <th>A2 - CSS</th>
-                <th>A3 - JS</th>
-                <th>A4 - PHP</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>John Doe</td>
-                <td>100%</td>
-                <td>100%</td>
-                <td>100%</td>
-                <td>100%</td>
-              </tr>
-              <tr>
-                <td>Jane Doe</td>
-                <td>100%</td>
-                <td>100%</td>
-                <td>100%</td>
-                <td>100%</td>
-              </tr>
-              <tr>
-                <td>John Smith</td>
-                <td>100%</td>
-                <td>100%</td>
-                <td>100%</td>
-                <td>100%</td>
-              </tr>
-              <tr>
-                <td>Jane Smith</td>
-                <td>100%</td>
-                <td>100%</td>
-                <td>100%</td>
-                <td>100%</td>
-              </tr>
-            </tbody>
-            <tfoot></tfoot>
-          </table>
-        </td>
-    </tr>
-    </tbody>
-</table>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
