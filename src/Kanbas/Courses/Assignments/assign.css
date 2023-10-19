@@ -1,0 +1,19 @@
+.assign-module-style{
+    width: 100%;
+    color: red;
+}
+.assignment-list-height{
+    height: 70px;
+ }
+.assign-list-length{
+    width: 50%;
+}
+.word-si{
+    font-size: smaller;
+}
+.green-book{
+    color: green;
+}
+.out{
+    display: flex;
+}

@@ -1,0 +1,38 @@
+.thbutton{
+    width: 100%;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.word-font{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.li-style{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    font-size: 100%;
+
+}
+.li-substyle{
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: 75%;
+
+}
+.module-style{
+    width: 100%;
+   
+   }
+.fixed-elementt{
+    position: fixed;
+    top: 10px; 
+    right: 470px; 
+
+}
+
+/* <li class="list-group-item" style="color: red">
+                        <i class="fa-solid fa-1 me-3" style="color: #ff2600;"></i>Grade A1-ENV+HTML
+                        <br>
+                        <h10 class="ms-3" style="color:gray">100 points + Sep 18 at11:59pm</h10>
+                      </li> */

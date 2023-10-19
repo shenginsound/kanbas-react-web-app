@@ -1,0 +1,25 @@
+.bu{
+    width: 70%;
+    text-align: left;
+}
+.module-style{
+    width: 100%;
+    color: red;
+   
+   }
+.word-bold{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.list-height{
+    height: 70px;
+ }
+
+.green-style{
+    color: green;
+}
+.fixed-element {
+    position: fixed;
+    top: 20px; 
+    right: 30px; 
+  }
