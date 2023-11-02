@@ -4,11 +4,24 @@ import db from "../../../Database";
 import {FaEllipsisVertical} from "react-icons/fa6"
 import {BsFillCheckCircleFill} from "react-icons/bs"
 
+import { useSelector, useDispatch } from "react-redux";
+import {
+  addAssignment,
+  deleteAssignment,
+  updateAssignment,
+  selectAssignment,
+} from "../assignmentsReducer";
+
+
 
 function AssignmentEditor() {
   const { assignmentId } = useParams();
-  const assignment = db.assignments.find(
-    (assignment) => assignment._id === assignmentId);
+  const assignments = useSelector((state) => state.assignmentsReducer.assignments);
+  const assignment = assignments.find((assignment) => assignment._id === assignmentId);
+
+  // const assignment = db.assignments.find(
+  //   (assignment) => assignment._id === assignmentId);
+  const dispatch = useDispatch();
 
 
   const { courseId } = useParams();
@@ -34,7 +47,7 @@ function AssignmentEditor() {
              className="form-control mb-2" />
         <hr></hr>
       
-      <button onClick={handleSave} className="btn btn-success me-2 float-end">
+      <button onClick={() => dispatch(updateAssignment(assignment))} className="btn btn-success me-2 float-end">
         Save
       </button>
       

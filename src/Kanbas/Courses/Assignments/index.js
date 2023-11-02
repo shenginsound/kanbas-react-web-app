@@ -9,14 +9,24 @@ import {BsFillJournalBookmarkFill} from "react-icons/bs"
 import {BsFillCheckCircleFill} from "react-icons/bs"
 import AssignButtonBoard from "./AssignButtonBoard";
 import 'bootstrap/dist/css/bootstrap.css';
+import { deleteAssignment } from "./assignmentsReducer.js";
 
-
+import { useSelector, useDispatch } from "react-redux";
+// import {
+//   addAssignment,
+//   deleteAssignment,
+//   updateAssignment,
+//   selectAssignment,
+// } from "../AssignmentsReducer";
 
 function Assignments() {
   const { courseId } = useParams();
-  const assignments = db.assignments;
+  // const assignments = db.assignments;
+  const assignments = useSelector((state) => state.assignmentsReducer.assignments);
+  const module = useSelector((state) => state.modulesReducer.module);
   const courseAssignments = assignments.filter(
     (assignment) => assignment.course === courseId);
+  const dispatch = useDispatch();
   return (
 
     
@@ -58,6 +68,7 @@ function Assignments() {
         </div>
 
         {courseAssignments.map((assignment) => (
+          <div className="out">
           <Link
             key={assignment._id}
             to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
@@ -65,10 +76,16 @@ function Assignments() {
             <BsGripVertical className="me-1"/>
             <BsFillJournalBookmarkFill className="me-1 green-book" />
             {assignment.title}
+            
             <BiDotsVerticalRounded className="me-3 float-end" />
             <BsFillCheckCircleFill className="me-3 float-end green-book"/>
             
           </Link>
+          <button className="btn btn-danger me-2 ms-2 float-end"
+          onClick={() => dispatch(deleteAssignment(assignment._id))}>
+          Delete
+        </button>
+        </div>
         ))}
       {/* </div> */}
     </div>

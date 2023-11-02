@@ -12,11 +12,11 @@ import "./course.css"
 import {FaBars} from "react-icons/fa"
 import {BiGlasses} from "react-icons/bi"
 
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
   const {pathname} = useLocation();
-  const [empty, kanbas, courses, id, screen] = pathname.split("/");
-  const course = db.courses.find((course) => course._id === courseId);
+  const [empty, kanbas, courses1, id, screen] = pathname.split("/");
+  const course = courses.find((course) => course._id === courseId);
   return (
     <div>
         <div className="d-flex">
