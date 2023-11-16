@@ -18,7 +18,6 @@ const initialState = {
       },
       deleteAssignment: (state, action) => {
         
-        
         state.assignments = state.assignments.filter(
           (assignment) => assignment._id !== action.payload
         );

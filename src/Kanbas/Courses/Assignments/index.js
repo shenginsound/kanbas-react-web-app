@@ -68,7 +68,6 @@ function Assignments() {
         </div>
 
         {courseAssignments.map((assignment) => (
-          <div className="out">
           <Link
             key={assignment._id}
             to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
@@ -76,16 +75,15 @@ function Assignments() {
             <BsGripVertical className="me-1"/>
             <BsFillJournalBookmarkFill className="me-1 green-book" />
             {assignment.title}
-            
+            {/* <button className="btn btn-danger me-2 ms-2 float-end"
+               onClick={}
+              >
+              Delete
+            </button> */}
             <BiDotsVerticalRounded className="me-3 float-end" />
             <BsFillCheckCircleFill className="me-3 float-end green-book"/>
             
           </Link>
-          <button className="btn btn-danger me-2 ms-2 float-end"
-          onClick={() => dispatch(deleteAssignment(assignment._id))}>
-          Delete
-        </button>
-        </div>
         ))}
       {/* </div> */}
     </div>

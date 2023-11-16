@@ -65,7 +65,8 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
 
       <div className="list-group">
         {courses.map((course) => (
-          <Link key={course._id}
+          <Link 
+          // key={course._id}
                 to={`/Kanbas/Courses/${course._id}`}
                 className="list-group-item">
                   <button className="btn btn-danger ms-3 me-2 mt-2 mb-2 float-end"

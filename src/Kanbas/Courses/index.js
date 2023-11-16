@@ -1,4 +1,6 @@
 import React from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import db from "../../Kanbas/Database";
 import { Navigate, Route, Routes, useParams, useLocation } from "react-router-dom";
 // import JsonPre from "../../Labs/a3/JsonPre";
@@ -12,11 +14,22 @@ import "./course.css"
 import {FaBars} from "react-icons/fa"
 import {BiGlasses} from "react-icons/bi"
 
-function Courses({ courses }) {
+function Courses() {
   const { courseId } = useParams();
+  const [course, setCourse] = useState({});
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(
+      `${URL}/${courseId}`
+    );
+    setCourse(response.data);
+  };
+
   const {pathname} = useLocation();
   const [empty, kanbas, courses1, id, screen] = pathname.split("/");
-  const course = courses.find((course) => course._id === courseId);
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
   return (
     <div>
         <div className="d-flex">
