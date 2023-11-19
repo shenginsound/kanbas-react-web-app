@@ -1,3 +1,4 @@
+
 import db from "../Database";
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
@@ -58,7 +59,7 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
       <button  className="btn btn-success ms-3 me-2 mt-2 mb-2" onClick={addNewCourse} >
         Add
       </button>
-      <button className="btn btn-primary ms-3 me-2 mt-2 mb-2" onClick={updateCourse} >
+      <button className="btn btn-primary ms-3 me-2 mt-2 mb-2" onClick={() => updateCourse(course)} >
         Update
       </button>
 
@@ -66,7 +67,7 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
       <div className="list-group">
         {courses.map((course) => (
           <Link 
-          // key={course._id}
+          key={course._id}
                 to={`/Kanbas/Courses/${course._id}`}
                 className="list-group-item">
                   <button className="btn btn-danger ms-3 me-2 mt-2 mb-2 float-end"

@@ -25,18 +25,19 @@ function Kanbas() {
 
   const [course, setCourse] = useState({
     name: "New Course",      number: "New Number",
-    startDate: "2023-09-10", endDate: "2023-12-15",
+    startDate: "2023-09-10", endDate: "2023-12-15"
   });
   const addNewCourse = async () => {
     const response = await axios.post(URL, course);
     setCourses([response.data,...courses]);
+    console.log("new course id is", course._id);
   };
   const deleteCourse = async(course) => {
     const response = await axios.delete(
-      `${URL}/${course._id}`
+      `${URL}/${course}`
     );
-
-    setCourses(courses.filter((c) => c._id !== course._Id));
+    console.log('kfnkjfjkf',response);
+    setCourses(courses.filter((c) => c._id !== course));
   };
   const updateCourse = async(course) => {
     const response = await axios.put(
@@ -47,7 +48,8 @@ function Kanbas() {
     setCourses(
       courses.map((c) => {
         if (c._id === course._id) {
-          return response.data;
+          
+          return course;
         } else {
           return c;
         }
