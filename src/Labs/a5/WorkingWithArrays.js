@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 function WorkingWithArrays() {
     const API = "http://localhost:4000/a5/todos";
+    const [errorMessage, setErrorMessage] = useState(null);
     const [todo, setTodo] = useState({
         id: 1,
         title: "NodeJS Assignment",
@@ -28,8 +29,14 @@ function WorkingWithArrays() {
         setTodos(response.data);
       };
       const deleteTodo = async (todo) => {
-        const response = await axios.delete(`${API}/${todo.id}`);
-        setTodos(todos.filter((t) => t.id !== todo.id));
+        try {
+          const response = await axios.delete(`${API}/${todo.id}`);
+          setTodos(todos.filter((t) => t.id !== todo.id));
+        } catch (error) {
+          console.log(error);
+          setErrorMessage(error.response.data.message);
+        }
+    
       };
     
       const createTodo = async () => {
@@ -46,11 +53,17 @@ function WorkingWithArrays() {
         setTodos(response.data);
       };
       const updateTodo = async () => {
-        const response = await axios.put(
-          `${API}/${todo.id}`, todo);
-        setTodos(todos.map((t) => (
-          t.id === todo.id ? todo : t)));
-        setTodo({});
+        try {
+          const response = await axios.put(
+            `${API}/${todo.id}`, todo);
+          setTodos(todos.map((t) => (
+            t.id === todo.id ? todo : t)));
+          setTodo({});
+        } catch (error) {
+          console.log(error);
+          setErrorMessage(error.response.data.message);
+        }
+    
       };
     
     
@@ -108,6 +121,11 @@ function WorkingWithArrays() {
               className="btn btn-success mb-2 w-100">
         Update Title
       </button>
+      {errorMessage && (
+        <div className="alert alert-danger mb-2 mt-2">
+          {errorMessage}
+        </div>
+      )}
 
       <ul className="list-group">
         {todos.map((todo) => (
