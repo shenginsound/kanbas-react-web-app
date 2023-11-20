@@ -15,6 +15,7 @@ import {FaBars} from "react-icons/fa"
 import {BiGlasses} from "react-icons/bi"
 
 function Courses() {
+  // const URL = "http://localhost:4000/api/courses";
   const URL = "https://kanbas-node-server-app-njny.onrender.com/api/courses";
   const { courseId } = useParams();
   const [course, setCourse] = useState({});
