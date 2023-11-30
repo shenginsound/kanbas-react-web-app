@@ -4,7 +4,7 @@ import { GoogleMap, useLoadScript, MarkerF } from "@react-google-maps/api";
 
 const MapComponent = ({ selectedLocation }) => {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyAHDq8GwCrU2k7WBMmBoQ1CX9USym6wPUo",
+    googleMapsApiKey: "",
   });
   const mapRef = React.useRef();
   const onMapLoad = React.useCallback((map) => {
