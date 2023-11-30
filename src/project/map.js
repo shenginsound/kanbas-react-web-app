@@ -11,7 +11,7 @@ function SportsMap() {
 
     return(
         
-        <APIProvider apiKey="AIzaSyAHDq8GwCrU2k7WBMmBoQ1CX9USym6wPUo">
+        <APIProvider apiKey="">
             <Map center= {position} zoom={16} style = {{height:"300pt"}}>
                 <Marker position ={position}/>
 
