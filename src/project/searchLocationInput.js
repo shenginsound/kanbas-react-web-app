@@ -59,7 +59,7 @@ const SearchLocationInput = ({ setSelectedLocation }) => {
 
   useEffect(() => {
     loadScript(
-      `https://maps.googleapis.com/maps/api/js?key=AIzaSyAHDq8GwCrU2k7WBMmBoQ1CX9USym6wPUo&libraries=places`,
+      `https://maps.googleapis.com/maps/api/js?key=&libraries=places`,
       () => handleScriptLoad(setQuery, autoCompleteRef)
     );
   }, []);
