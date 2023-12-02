@@ -2,10 +2,10 @@ import * as client from "./client";
 import { useState, useEffect } from "react";
 import { useNavigate, Link,  useParams } from "react-router-dom";
 function Account() {
-    const { id } = useParams();
+  const { userId } = useParams();
   const [account, setAccount] = useState(null);
-  const findUserById = async (id) => {
-    const user = await client.findUserById(id);
+  const findUserById = async (userId) => {
+    const user = await client.findUserById(userId);
     setAccount(user);
   };
 
@@ -24,8 +24,8 @@ function Account() {
 
 
   useEffect(() => {
-    if (id) {
-        findUserById(id);
+    if (userId) {
+        findUserById(userId);
       } else {
   
     fetchAccount();}
@@ -33,6 +33,7 @@ function Account() {
   return (
     <div className="w-50">
       <h1>Account</h1>
+      <h1>{userId}</h1>
       {account && (
         <div>
           <input value={account.password}

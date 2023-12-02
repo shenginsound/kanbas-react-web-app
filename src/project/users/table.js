@@ -58,8 +58,8 @@ function UserTable() {
           </tr>
           <tr>
             <td>
-              <label for="password">password</label>
-              <input id="password" value={user.password} onChange={(e) => setUser({ ...user, password: e.target.value })}/>
+              {/* <label for="password">password</label> */}
+              <input value={user.password} onChange={(e) => setUser({ ...user, password: e.target.value })}/>
               <input value={user.username} onChange={(e) => setUser({ ...user, username: e.target.value })}/>
             </td>
             <td>
@@ -88,7 +88,9 @@ function UserTable() {
             <tr key={user._id}>
               <td><Link to={`/project/account/${user._id}`}>
                 {user.username}
+      
                 </Link></td>
+                <td>{user._id}</td>
               <td>{user.firstName}</td>
               <td>{user.lastName}</td>
               <td><button className="btn btn-warning me-2">
