@@ -1,8 +1,8 @@
 import axios from "axios";
 //import setupProxy from "../setupProxy";
-
-
-// export const SPORTS_API = "https://isports.sa.gov.tw/Api/Rest/v1";
+// export const SPORTS_API = "https://isports.sa.gov.tw/Api/Rest/v1"; 
+export const WEATHER_API ="http://dataservice.accuweather.com/forecasts/v1/daily/5day/34875"
+export const API_KEY = process.env.REACT_APP_WEATHER_API_KEY
 
 export const findLifeguard = async (searchTerm) => {
     
@@ -17,3 +17,7 @@ export const findLifeguard = async (searchTerm) => {
     //   return response.data;
 
 };
+ export const findWeather = async () => {
+    const response = await axios.get(`${WEATHER_API}?apikey=${API_KEY}`);
+    return  response.data;
+ }

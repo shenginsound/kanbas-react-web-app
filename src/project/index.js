@@ -7,6 +7,8 @@ import Details from "./details";
 import { Routes, Route, Link } from "react-router-dom";
 import { useState } from "react";
 import SportsMap from "./map";
+import SearchWeather from "./searchWeather";
+import SearchWeatherDetails from "./searchWeatherDetails";
 // import UserList from "./users/list";
 // import UserDetails from "./users/details";
 // import SignIn from "./users/signin";
@@ -38,6 +40,12 @@ function Project(){
             <Link to="/project/map" className="list-group-item">
               SportsMap
             </Link>
+            <Link to="/project/searchWeather" className="list-group-item">
+              searchWeather
+            </Link>
+            <Link to="/project/searchWeatherDetails" className="list-group-item">
+              searchWeatherDetails
+            </Link>
             {/* <Link to="/project/users" className="list-group-item">
               Users
             </Link> */}
@@ -52,6 +60,8 @@ function Project(){
             <Route path="/search" element ={<Search/>} ></Route>;
             <Route path="/details" element ={<Details/>} ></Route>;
             <Route path="/map" element ={<SportsMap/>} ></Route>;
+            <Route path="/searchWeather" element ={<SearchWeather/>} ></Route>;
+            <Route path="/searchWeatherDetails" element ={<SearchWeatherDetails/>} ></Route>;
 
         </Routes>
 
