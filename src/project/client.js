@@ -4,6 +4,9 @@ import axios from "axios";
 export const WEATHER_API ="http://dataservice.accuweather.com/forecasts/v1/daily/5day/34875"
 export const API_KEY = process.env.REACT_APP_WEATHER_API_KEY
 
+export const MOVIE_API= "https://www.omdbapi.com/"
+export const MOVIE_API_KEY = process.env.MOVIE_API_KEY
+
 export const findLifeguard = async (searchTerm) => {
     
     // axios.get('https://isports.sa.gov.tw/Api/Rest/v1/LifeguardLicense.svc/GetLicense?licenseType=OW&paging=false').then(response => {console.log('Response:', response);}).catch(error => {console.error('Error:', error);});
@@ -20,4 +23,10 @@ export const findLifeguard = async (searchTerm) => {
  export const findWeather = async () => {
     const response = await axios.get(`${WEATHER_API}?apikey=${API_KEY}`);
     return  response.data;
- }
+ };
+
+ export const findMovie = async (searchTitle) => {
+    const response = await axios.get(`${MOVIE_API}?t=${searchTitle}&apikey=${MOVIE_API_KEY}`);
+    return  response.data;
+
+ };
