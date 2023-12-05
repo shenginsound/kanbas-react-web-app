@@ -65,7 +65,7 @@ function Project(){
             <Route path="/details" element ={<Details/>} ></Route>;
             <Route path="/map" element ={<SportsMap/>} ></Route>;
             <Route path="/searchWeather" element ={<SearchWeather/>} ></Route>;
-            <Route path="/searchWeatherDetails/:imdbId" element ={<SearchWeatherDetails/>} ></Route>;
+            {/* <Route path="/searchWeatherDetails/:imdbId" element ={<SearchWeatherDetails/>} ></Route>; */}
             <Route path="/searchMovie" element ={<SearchMovie/>} ></Route>;
 
         </Routes>

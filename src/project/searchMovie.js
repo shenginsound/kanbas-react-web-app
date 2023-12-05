@@ -42,11 +42,14 @@ function SearchMovie  () {
                 <oi className="list-group-item"> 
                 Title : {results.Title}</oi>
                 }
-                <img
+                { results &&
+                    <img
                   src={results.Poster}
                   alt={results.Title}
                   className="poster-img"
                 />
+                }
+                
                 {results && 
                 <oi className="list-group-item"> Year : {results.Year}</oi>
                 }
