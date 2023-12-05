@@ -33,7 +33,8 @@ function Account() {
   return (
     <div className="w-50">
       <h1>Account</h1>
-      <h1>{userId}</h1>
+      
+      <h1>{account.password}</h1>
       {account && (
         <div>
           <input value={account.password}
@@ -61,9 +62,9 @@ function Account() {
           
         </div>
       )}
-      {account && <button onClick={save}>
+       <button onClick={save}>
      Save
-  </button>}
+  </button>
   <button onClick={signout}>
     Signout
   </button>
