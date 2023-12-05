@@ -33,6 +33,7 @@ function Account() {
   return (
     <div className="w-50">
       <h1>Account</h1>
+      console.log({userId});
       
       <h1>{userId}</h1>
       {account && (
