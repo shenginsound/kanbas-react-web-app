@@ -2,7 +2,8 @@ import * as client from "./client";
 import { useState, useEffect } from "react";
 import { useNavigate, Link,  useParams } from "react-router-dom";
 function Account() {
-  const { id } = useParams();
+  //const { id } = useParams();
+  const id = "656bd969cc2f02765e0c39cc"
   const [account, setAccount] = useState(null);
   const findUserById = async (id) => {
     const user = await client.findUserById(id);
