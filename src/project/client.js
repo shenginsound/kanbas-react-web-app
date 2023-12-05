@@ -5,7 +5,7 @@ export const WEATHER_API ="http://dataservice.accuweather.com/forecasts/v1/daily
 export const API_KEY = process.env.REACT_APP_WEATHER_API_KEY
 
 export const MOVIE_API= "https://www.omdbapi.com/"
-export const MOVIE_API_KEY = process.env.MOVIE_API_KEY
+export const MOVIE_API_KEY = process.env.REACT_APP_MOVIE_API_KEY
 
 export const findLifeguard = async (searchTerm) => {
     

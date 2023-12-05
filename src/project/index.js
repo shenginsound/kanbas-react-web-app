@@ -9,6 +9,7 @@ import { useState } from "react";
 import SportsMap from "./map";
 import SearchWeather from "./searchWeather";
 import SearchWeatherDetails from "./searchWeatherDetails";
+import SearchMovie from "./searchMovie";
 // import UserList from "./users/list";
 // import UserDetails from "./users/details";
 // import SignIn from "./users/signin";
@@ -46,6 +47,9 @@ function Project(){
             <Link to="/project/searchWeatherDetails" className="list-group-item">
               searchWeatherDetails
             </Link>
+            <Link to="/project/searchMovie" className="list-group-item">
+              searchMovie
+            </Link>
             {/* <Link to="/project/users" className="list-group-item">
               Users
             </Link> */}
@@ -61,7 +65,8 @@ function Project(){
             <Route path="/details" element ={<Details/>} ></Route>;
             <Route path="/map" element ={<SportsMap/>} ></Route>;
             <Route path="/searchWeather" element ={<SearchWeather/>} ></Route>;
-            <Route path="/searchWeatherDetails" element ={<SearchWeatherDetails/>} ></Route>;
+            <Route path="/searchWeatherDetails/:imdbId" element ={<SearchWeatherDetails/>} ></Route>;
+            <Route path="/searchMovie" element ={<SearchMovie/>} ></Route>;
 
         </Routes>
 
