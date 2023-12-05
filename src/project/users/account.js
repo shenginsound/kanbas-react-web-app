@@ -6,15 +6,8 @@ function Account() {
   //const id = "656bd969cc2f02765e0c39cc"
   const [account, setAccount] = useState(null);
   const findUserById = async (id) => {
-    try {
-      const user = await client.findUserById(id);
-      setAccount(user);
-    } catch (err) {
-      setError("Please sign in first");
-    }
-    // const user = await client.findUserById(id);
-    // setAccount(user);
-    
+    const user = await client.findUserById(id);
+    setAccount(user);
   };
 
   const navigate = useNavigate();
