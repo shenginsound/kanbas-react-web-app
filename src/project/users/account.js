@@ -3,7 +3,18 @@ import { useState, useEffect } from "react";
 import { useNavigate, Link,  useParams } from "react-router-dom";
 function Account() {
   const { userId } = useParams();
-  const [account, setAccount] = useState(null);
+  const [account, setAccount] = useState({
+    "_id": {
+      "$oid": "656a66b6dcac17caa1bd10f0"
+    },
+    "username": "dark_knight",
+    "password": "wayne123",
+    "firstName": "Bruce",
+    "lastName": "Wayne",
+    "email": "bruce@wayne.com",
+    "dob": "1972-02-19",
+    "role": "STUDENT"
+  });
   const findUserById = async (userId) => {
     const user = await client.findUserById(userId);
     setAccount(user);
