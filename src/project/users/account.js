@@ -2,8 +2,8 @@ import * as client from "./client";
 import { useState, useEffect } from "react";
 import { useNavigate, Link,  useParams } from "react-router-dom";
 function Account() {
-  //const { id } = useParams();
-  const id = "656bd969cc2f02765e0c39cc"
+  const { id } = useParams();
+  //const id = "656bd969cc2f02765e0c39cc"
   const [account, setAccount] = useState(null);
   const findUserById = async (id) => {
     const user = await client.findUserById(id);
@@ -34,7 +34,7 @@ function Account() {
   return (
     <div className="w-50">
       <h1>Account</h1>
-      console.log({id});
+      
       
       <h1>{id}</h1>
       {account && (
