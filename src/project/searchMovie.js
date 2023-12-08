@@ -1,6 +1,7 @@
 import * as client from "./client.js"
 import React, { useState, useEffect } from "react";
 import "./poster.css"
+import { Link } from "react-router-dom";
 
 function SearchMovie  () {
     const [title, setTitle] = useState("");
@@ -39,8 +40,10 @@ function SearchMovie  () {
             <h2>Results</h2>
             <ul className="list-group w-75">
                 {results && 
-                <oi className="list-group-item"> 
-                Title : {results.Title}</oi>
+                
+                <oi className="list-group-item">
+                    <Link to={`/project/searchMovieDetails/${results.imdbID}`}>
+                Title : {results.Title}</Link> </oi>
                 }
                 { results &&
                     <img
@@ -49,6 +52,7 @@ function SearchMovie  () {
                   className="poster-img"
                 />
                 }
+                
                 
                 {results && 
                 <oi className="list-group-item"> Year : {results.Year}</oi>
@@ -70,7 +74,7 @@ function SearchMovie  () {
 
 
 
-            {/* <pre>{JSON.stringify(results, null, 2)}</pre> */}
+            {/* <pre>{JSON.stringify(results, null, 2)}</pre>  */}
             
 
         </div>

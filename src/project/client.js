@@ -30,3 +30,8 @@ export const findLifeguard = async (searchTerm) => {
     return  response.data;
 
  };
+
+ export const findMovieById = async (imdbID) => {
+    const response = await axios.get(`${MOVIE_API}?i=${imdbID}&apikey=${MOVIE_API_KEY}`);
+    return response.data;
+ };

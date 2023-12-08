@@ -6,7 +6,7 @@ function SearchWeatherDetails() {
     return(
         <div>
             <h1>SearchWeatherDetails</h1>
-            {API_KEY}
+            {/* {API_KEY} */}
         </div>
 
     );
