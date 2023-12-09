@@ -10,6 +10,10 @@ import SportsMap from "./map";
 import SearchWeather from "./searchWeather";
 import SearchWeatherDetails from "./searchWeatherDetails";
 import SearchMovie from "./searchMovie";
+import Signin from "./users/signin";
+import Account from "./users/account";
+import UserTable from "./users/table";
+import Signup from "./users/signup";
 
 import SearchMovieDetails from "./searchMovieDetails";
 // import UserList from "./users/list";
@@ -49,6 +53,17 @@ function Project(){
             <Link to="/project/searchWeatherDetails" className="list-group-item">
               searchWeatherDetails
             </Link>
+            <Link to="/project/signin" className="list-group-item">
+              Signin
+            </Link>
+            <Link to="/project/signup" className="list-group-item">
+              SignUp
+            </Link>
+            <Link to="/project/admin/users" className="list-group-item">
+              UserTable</Link>
+            <Link to="/project/account" className="list-group-item">
+              Account
+            </Link>
             <Link to="/project/searchMovie" className="list-group-item">
               searchMovie
             </Link>
@@ -67,6 +82,13 @@ function Project(){
             <Route path="/" element ={<Home/>} ></Route>;
             <Route path="/profile" element ={<Profile/>} ></Route>;
             <Route path="/search" element ={<Search/>} ></Route>;
+            <Route path="/signin" element={<Signin />} ></Route>;
+            <Route path="/signup" element={<Signup />} ></Route>;
+            
+            <Route path="/admin/users" element={<UserTable />} />
+
+            <Route path="/account" element={<Account />} ></Route>;
+            <Route path="/account/:id" element={<Account />} />
             <Route path="/details" element ={<Details/>} ></Route>;
             <Route path="/map" element ={<SportsMap/>} ></Route>;
             <Route path="/searchWeather" element ={<SearchWeather/>} ></Route>;
